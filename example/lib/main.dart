@@ -2,11 +2,11 @@ import 'package:tap_tooltip/tap_tooltip.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ClickTooltipDemoApp());
+  runApp(const TapTooltipDemoApp());
 }
 
-class ClickTooltipDemoApp extends StatelessWidget {
-  const ClickTooltipDemoApp({super.key});
+class TapTooltipDemoApp extends StatelessWidget {
+  const TapTooltipDemoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class DemoHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('ClickTooltip 配置演示')),
+      appBar: AppBar(title: const Text('TapTooltip 配置演示')),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 16),
         children: const [
@@ -165,7 +165,7 @@ class _InteractivePlayground extends StatefulWidget {
 }
 
 class _InteractivePlaygroundState extends State<_InteractivePlayground> {
-  final ClickTooltipController _controller = ClickTooltipController();
+  final TapTooltipController _controller = TapTooltipController();
   TooltipDirection _direction = TooltipDirection.top;
   _DemoContent _content = _DemoContent.text;
   _DemoAnchor _anchor = _DemoAnchor.icon;
@@ -452,7 +452,7 @@ class _InteractivePlaygroundState extends State<_InteractivePlayground> {
   }
 
   Widget _buildTooltip(BuildContext context) {
-    return ClickTooltip(
+    return TapTooltip(
       key: ValueKey(_content),
       controller: _controller,
       direction: _direction,
@@ -736,7 +736,7 @@ class _DirectionDemos extends StatelessWidget {
         _Tile(
           label: 'direction: top',
           subtitle: '气泡在锚点上方',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.top,
             tooltip: 'direction=top → 气泡出现在锚点上方',
           ),
@@ -744,7 +744,7 @@ class _DirectionDemos extends StatelessWidget {
         _Tile(
           label: 'direction: bottom',
           subtitle: '气泡在锚点下方',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: 'direction=bottom → 气泡出现在锚点下方',
           ),
@@ -752,7 +752,7 @@ class _DirectionDemos extends StatelessWidget {
         _Tile(
           label: 'direction: left',
           subtitle: '气泡在锚点左侧',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.left,
             tooltip: 'direction=left → 气泡出现在锚点左侧',
           ),
@@ -760,7 +760,7 @@ class _DirectionDemos extends StatelessWidget {
         _Tile(
           label: 'direction: right',
           subtitle: '气泡在锚点右侧',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.right,
             tooltip: 'direction=right → 气泡出现在锚点右侧',
           ),
@@ -782,7 +782,7 @@ class _IsStartDemos extends StatelessWidget {
         _Tile(
           label: 'isStart: true',
           subtitle: '箭头靠起始侧对齐（默认）',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             isStart: true,
             tooltip: 'isStart=true → 箭头靠左/上对齐',
@@ -791,7 +791,7 @@ class _IsStartDemos extends StatelessWidget {
         _Tile(
           label: 'isStart: false',
           subtitle: '箭头靠末尾侧对齐',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             isStart: false,
             tooltip: 'isStart=false → 箭头靠右/下对齐',
@@ -814,7 +814,7 @@ class _TriangleShapeDemos extends StatelessWidget {
         _Tile(
           label: '默认箭头',
           subtitle: 'triangleWidth / triangleHeight 为默认值',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: '默认箭头形状',
           ),
@@ -822,7 +822,7 @@ class _TriangleShapeDemos extends StatelessWidget {
         _Tile(
           label: '宽箭头',
           subtitle: 'triangleWidth: 28, triangleHeight: 14',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             triangleWidth: 28,
             triangleHeight: 14,
@@ -832,7 +832,7 @@ class _TriangleShapeDemos extends StatelessWidget {
         _Tile(
           label: '圆角箭头',
           subtitle: 'triangleRadius: 4',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             triangleRadius: 4,
             tooltip: 'triangleRadius 让箭头尖端变圆',
@@ -841,7 +841,7 @@ class _TriangleShapeDemos extends StatelessWidget {
         _Tile(
           label: '大圆角箭头',
           subtitle: 'triangleRadius: 8',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             triangleRadius: 8,
             tooltip: '更大的圆角半径',
@@ -864,7 +864,7 @@ class _AnchorDemos extends StatelessWidget {
         _Tile(
           label: '默认锚点',
           subtitle: '未设置 child，默认 help 图标',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: '默认显示 help_outline 图标',
           ),
@@ -872,7 +872,7 @@ class _AnchorDemos extends StatelessWidget {
         _Tile(
           label: 'questionColor: Colors.red',
           subtitle: '图标颜色设为红色',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             questionColor: Colors.red,
             tooltip: 'questionColor 控制默认图标颜色',
@@ -881,7 +881,7 @@ class _AnchorDemos extends StatelessWidget {
         _Tile(
           label: 'questionSize: 28',
           subtitle: '图标尺寸放大',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             questionSize: 28,
             questionColor: Colors.indigo,
@@ -891,7 +891,7 @@ class _AnchorDemos extends StatelessWidget {
         _Tile(
           label: '自定义 child',
           subtitle: '用任意 Widget 替代默认图标',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: 'child 可以是任意 Widget',
             child: Container(
@@ -924,7 +924,7 @@ class _ContentDemos extends StatelessWidget {
         _Tile(
           label: 'tooltip (纯文本)',
           subtitle: '最简用法，传入 String',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: '这是 tooltip 参数，支持纯文本',
           ),
@@ -932,7 +932,7 @@ class _ContentDemos extends StatelessWidget {
         _Tile(
           label: 'tooltipWidget',
           subtitle: '自定义气泡内容 Widget',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             triangleRadius: 2,
             tooltipWidget: Column(
@@ -969,7 +969,7 @@ class _ContentDemos extends StatelessWidget {
         _Tile(
           label: 'tooltipBuilder',
           subtitle: '完全自定义整个浮层',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.left,
             tooltipBuilder: (context) {
               return DecoratedBox(
@@ -1009,7 +1009,7 @@ class _StyleDemos extends StatelessWidget {
         _Tile(
           label: '默认样式',
           subtitle: '黑色背景 + 白色文字',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             tooltip: '默认: 黑色半透明背景 + 白色 14px 文字',
           ),
@@ -1017,7 +1017,7 @@ class _StyleDemos extends StatelessWidget {
         _Tile(
           label: '自定义 decoration',
           subtitle: '颜色 + 圆角 + 边框 + 阴影',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -1038,7 +1038,7 @@ class _StyleDemos extends StatelessWidget {
         _Tile(
           label: '渐变背景 decoration',
           subtitle: 'gradient + 阴影',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
@@ -1060,7 +1060,7 @@ class _StyleDemos extends StatelessWidget {
         _Tile(
           label: '自定义 padding',
           subtitle: 'padding: EdgeInsets.all(20)',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
@@ -1074,7 +1074,7 @@ class _StyleDemos extends StatelessWidget {
         _Tile(
           label: '自定义 tooltipStyle',
           subtitle: '字体大小、颜色、粗细等',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             decoration: BoxDecoration(
               color: Colors.grey.shade900,
@@ -1106,7 +1106,7 @@ class _BlurDemos extends StatelessWidget {
         _Tile(
           label: 'isBlur: false (默认)',
           subtitle: '无模糊效果',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             isBlur: false,
             tooltip: '默认无背景模糊',
@@ -1115,7 +1115,7 @@ class _BlurDemos extends StatelessWidget {
         _Tile(
           label: 'isBlur: true',
           subtitle: '气泡下方背景被模糊处理',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             isBlur: true,
             decoration: BoxDecoration(
@@ -1141,7 +1141,7 @@ class _InteractionDemos extends StatefulWidget {
 }
 
 class _InteractionDemosState extends State<_InteractionDemos> {
-  final ClickTooltipController _controller = ClickTooltipController();
+  final TapTooltipController _controller = TapTooltipController();
 
   @override
   void dispose() {
@@ -1156,7 +1156,7 @@ class _InteractionDemosState extends State<_InteractionDemos> {
         _Tile(
           label: 'autoDismiss: true (默认)',
           subtitle: '点击气泡外部自动关闭',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             autoDismiss: true,
             tooltip: '点击空白处关闭',
@@ -1165,7 +1165,7 @@ class _InteractionDemosState extends State<_InteractionDemos> {
         _Tile(
           label: 'autoDismiss: false',
           subtitle: '点击气泡外部不会自动关闭',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             autoDismiss: false,
             tooltip: '点击空白处不会关闭，只能通过 controller 关闭',
@@ -1174,7 +1174,7 @@ class _InteractionDemosState extends State<_InteractionDemos> {
         _Tile(
           label: 'barrierDismissible: false',
           subtitle: 'autoDismiss=true 但点击空白不关闭',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             autoDismiss: true,
             barrierDismissible: false,
@@ -1184,7 +1184,7 @@ class _InteractionDemosState extends State<_InteractionDemos> {
         _Tile(
           label: 'clickable: false',
           subtitle: '锚点不可点击，由 controller 控制',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             clickable: false,
             controller: _controller,
@@ -1229,7 +1229,7 @@ class _SizeDemos extends StatelessWidget {
         _Tile(
           label: 'offset: Offset(0, 0)',
           subtitle: '无偏移（默认）',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             offset: Offset.zero,
             tooltip: 'offset=Offset.zero 无额外偏移',
@@ -1238,7 +1238,7 @@ class _SizeDemos extends StatelessWidget {
         _Tile(
           label: 'offset: Offset(40, 0)',
           subtitle: '箭头向右偏移 40px',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             offset: const Offset(40, 0),
             tooltip: 'offset.dx=40 → 箭头向右偏移',
@@ -1247,7 +1247,7 @@ class _SizeDemos extends StatelessWidget {
         _Tile(
           label: 'maxWidth: 150',
           subtitle: '限制气泡最大宽度',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             maxWidth: 150,
             tooltip: 'maxWidth 限制气泡最大宽度，超出会自动换行',
@@ -1256,7 +1256,7 @@ class _SizeDemos extends StatelessWidget {
         _Tile(
           label: 'maxWidth: 300',
           subtitle: '更宽的气泡',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             maxWidth: 300,
             tooltip: 'maxWidth 设大一些气泡就更宽',
@@ -1265,7 +1265,7 @@ class _SizeDemos extends StatelessWidget {
         _Tile(
           label: 'maxHeight: 60',
           subtitle: '限制气泡最大高度',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             maxHeight: 60,
             tooltip: 'maxHeight 限制气泡最大高度，内容超出会被裁切',
@@ -1288,7 +1288,7 @@ class _SafeAreaDemos extends StatelessWidget {
         _Tile(
           label: 'autoSafeDetection: true (默认)',
           subtitle: '气泡自动避让屏幕边缘',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             autoSafeDetection: true,
             tooltip: 'autoSafeDetection=true → 气泡自动调整位置避免超出屏幕',
@@ -1297,7 +1297,7 @@ class _SafeAreaDemos extends StatelessWidget {
         _Tile(
           label: 'autoSafeDetection: false',
           subtitle: '不自动避让，气泡可能超出屏幕',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             autoSafeDetection: false,
             tooltip: '关闭自动避让，气泡可能被截断',
@@ -1306,7 +1306,7 @@ class _SafeAreaDemos extends StatelessWidget {
         _Tile(
           label: 'safePadding: EdgeInsets.all(8)',
           subtitle: '安全边距 (默认 8)',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             safePadding: const EdgeInsets.all(8),
             tooltip: 'safePadding 控制气泡与屏幕边缘的最小间距',
@@ -1315,7 +1315,7 @@ class _SafeAreaDemos extends StatelessWidget {
         _Tile(
           label: 'safePadding: EdgeInsets.all(40)',
           subtitle: '更大的安全边距',
-          child: ClickTooltip(
+          child: TapTooltip(
             direction: TooltipDirection.bottom,
             safePadding: const EdgeInsets.all(40),
             tooltip: '更大的 safePadding 让气泡更远离屏幕边缘',

@@ -1,7 +1,11 @@
 name: tap_tooltip
 description: "A new Flutter project."
 version: 0.0.1
-homepage:
+
+homepage: https://github.com/ZxlHyy/tap_tooltip
+repository: https://github.com/ZxlHyy/tap_tooltip
+issue_tracker: https://github.com/ZxlHyy/tap_tooltip/issues
+documentation: https://github.com/ZxlHyy/tap_tooltip#readme
 
 environment:
   sdk: ^3.9.2

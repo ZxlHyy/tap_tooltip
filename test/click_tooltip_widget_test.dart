@@ -10,7 +10,7 @@ void main() {
       const MaterialApp(
         home: Scaffold(
           body: Center(
-            child: ClickTooltip(
+            child: TapTooltip(
               tooltip: 'Tooltip message',
               child: Text('Tap me'),
             ),
@@ -35,14 +35,14 @@ void main() {
   testWidgets('can be controlled by ClickTooltipController', (
     WidgetTester tester,
   ) async {
-    final controller = ClickTooltipController();
+    final controller = TapTooltipController();
     addTearDown(controller.dispose);
 
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
           body: Center(
-            child: ClickTooltip(
+            child: TapTooltip(
               controller: controller,
               tooltip: 'Controlled tooltip',
               child: const Text('Anchor'),
@@ -77,7 +77,7 @@ void main() {
     };
 
     for (final entry in cases.entries) {
-      final controller = ClickTooltipController();
+      final controller = TapTooltipController();
       addTearDown(controller.dispose);
 
       await tester.pumpWidget(
@@ -88,7 +88,7 @@ void main() {
                 Positioned(
                   left: 300,
                   top: 300,
-                  child: ClickTooltip(
+                  child: TapTooltip(
                     controller: controller,
                     direction: entry.key,
                     autoSafeDetection: false,
@@ -165,7 +165,7 @@ void main() {
   testWidgets(
     'allows top and bottom tooltip arrows to match side edge spacing',
     (WidgetTester tester) async {
-      final controller = ClickTooltipController();
+      final controller = TapTooltipController();
       addTearDown(controller.dispose);
 
       await tester.pumpWidget(
@@ -176,7 +176,7 @@ void main() {
                 Positioned(
                   left: 300,
                   top: 300,
-                  child: ClickTooltip(
+                  child: TapTooltip(
                     controller: controller,
                     direction: TooltipDirection.bottom,
                     autoSafeDetection: false,
@@ -243,7 +243,7 @@ void main() {
                 Positioned(
                   left: 0,
                   top: 100,
-                  child: ClickTooltip(
+                  child: TapTooltip(
                     direction: TooltipDirection.bottom,
                     autoSafeDetection: true,
                     safePadding: const EdgeInsets.only(left: 24, top: 12),
@@ -282,7 +282,7 @@ Future<Size> _layoutTooltipAndReadConstraints(
   required double anchorLeft,
   required double anchorTop,
 }) async {
-  final controller = ClickTooltipController();
+  final controller = TapTooltipController();
   addTearDown(controller.dispose);
   Size? maxSize;
 
@@ -294,7 +294,7 @@ Future<Size> _layoutTooltipAndReadConstraints(
             Positioned(
               left: anchorLeft,
               top: anchorTop,
-              child: ClickTooltip(
+              child: TapTooltip(
                 controller: controller,
                 direction: direction,
                 autoSafeDetection: true,
@@ -338,7 +338,7 @@ Future<void> _pumpEdgeTooltip(
               Positioned(
                 left: 0,
                 top: 100,
-                child: ClickTooltip(
+                child: TapTooltip(
                   direction: TooltipDirection.bottom,
                   autoSafeDetection: autoSafeDetection,
                   offset: const Offset(-24, 0),

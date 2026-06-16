@@ -7,7 +7,7 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('example app shows a tooltip', (WidgetTester tester) async {
-    await tester.pumpWidget(const TooltipExampleApp());
+    await tester.pumpWidget(const TapTooltipDemoApp());
 
     await tester.tap(find.byIcon(Icons.help_outline_rounded).first);
     await tester.pumpAndSettle();

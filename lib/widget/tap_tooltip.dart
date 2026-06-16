@@ -8,7 +8,7 @@ enum TooltipDirection { top, bottom, left, right }
 
 enum TriangleDirection { top, bottom, left, right }
 
-class ClickTooltipController {
+class TapTooltipController {
   final ValueNotifier<bool> showTip = ValueNotifier<bool>(false);
   VoidCallback? _onShow;
   VoidCallback? _onHide;
@@ -52,8 +52,8 @@ class ClickTooltipController {
   }
 }
 
-class ClickTooltip extends StatefulWidget {
-  final ClickTooltipController? controller;
+class TapTooltip extends StatefulWidget {
+  final TapTooltipController? controller;
 
   /// The clickable widget. Defaults to a help icon.
   final Widget? child;
@@ -83,7 +83,7 @@ class ClickTooltip extends StatefulWidget {
   final double? triangleHeight;
   final double triangleRadius;
 
-  const ClickTooltip({
+  const TapTooltip({
     super.key,
     this.controller,
     this.child,
@@ -119,10 +119,10 @@ class ClickTooltip extends StatefulWidget {
        assert(triangleRadius >= 0);
 
   @override
-  State<ClickTooltip> createState() => _ClickTooltipState();
+  State<TapTooltip> createState() => _TapTooltipState();
 }
 
-class _ClickTooltipState extends State<ClickTooltip>
+class _TapTooltipState extends State<TapTooltip>
     with SingleTickerProviderStateMixin {
   static const Duration _animationDuration = Duration(milliseconds: 180);
   static const double _defaultIconSize = 16;
@@ -134,7 +134,7 @@ class _ClickTooltipState extends State<ClickTooltip>
   static const double _defaultHorizontalTriangleWidth = 10;
   static const double _defaultHorizontalTriangleHeight = 16;
 
-  late ClickTooltipController _controller;
+  late TapTooltipController _controller;
   late final AnimationController _animationController;
   late final Animation<double> _fadeAnimation;
   late final Animation<double> _scaleAnimation;
@@ -167,7 +167,7 @@ class _ClickTooltipState extends State<ClickTooltip>
   }
 
   @override
-  void didUpdateWidget(covariant ClickTooltip oldWidget) {
+  void didUpdateWidget(covariant TapTooltip oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.controller != widget.controller) {
       _releaseController();
@@ -219,9 +219,9 @@ class _ClickTooltipState extends State<ClickTooltip>
     return Offset(_offset.dx, 0);
   }
 
-  void _bindController(ClickTooltipController? controller) {
+  void _bindController(TapTooltipController? controller) {
     _ownsController = controller == null;
-    _controller = controller ?? ClickTooltipController();
+    _controller = controller ?? TapTooltipController();
     _controller._bindView(_showTooltip, _hideTooltip);
     _setVisible(_controller.showTip.value, rebuild: false);
     if (_controller.showTip.value) {
