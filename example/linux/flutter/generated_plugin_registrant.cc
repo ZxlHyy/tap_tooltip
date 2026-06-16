@@ -10,6 +10,6 @@
 
 void fl_register_plugins(FlPluginRegistry* registry) {
   g_autoptr(FlPluginRegistrar) tap_tooltip_registrar =
-      fl_plugin_registry_get_registrar_for_plugin(registry, "ClickTooltipPlugin");
+      fl_plugin_registry_get_registrar_for_plugin(registry, "TapTooltipPlugin");
   tap_tooltip_plugin_register_with_registrar(tap_tooltip_registrar);
 }

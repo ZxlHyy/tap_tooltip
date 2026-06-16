@@ -23,7 +23,7 @@ blur, outside-tap dismissal, and automatic screen-boundary adjustment.
 - Use plain text, a custom `Widget`, or a complete `tooltipBuilder` overlay.
 - Customize padding, constraints, width, height, decoration, text style, arrow
   size, and arrow radius.
-- Control visibility from outside the widget with `ClickTooltipController`.
+- Control visibility from outside the widget with `TapTooltipController`.
 - Keep the tooltip inside the visible screen with `autoSafeDetection` and
   `safePadding`.
 - Optionally dismiss the tooltip on outside taps or disable anchor click
@@ -47,12 +47,12 @@ import 'package:tap_tooltip/tap_tooltip.dart';
 ## Basic Usage
 
 ```dart
-ClickTooltip(
+TapTooltip(
   tooltip: 'Helpful explanation',
 )
 ```
 
-By default, `ClickTooltip` renders a small help icon. Tapping the icon opens the
+By default, `TapTooltip` renders a small help icon. Tapping the icon opens the
 tooltip.
 
 ## Custom Anchor
@@ -60,7 +60,7 @@ tooltip.
 Pass `child` to use your own clickable anchor:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   direction: TooltipDirection.bottom,
   tooltip: 'This message is attached to a custom button.',
   child: Container(
@@ -85,7 +85,7 @@ If you use the default icon, you can customize it with `questionColor` and
 Use `tooltip` for simple text:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   tooltip: 'Plain text tooltip',
 )
 ```
@@ -93,7 +93,7 @@ ClickTooltip(
 Use `tooltipWidget` for custom content inside the default bubble:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   tooltipWidget: Column(
     mainAxisSize: MainAxisSize.min,
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,7 +118,7 @@ ClickTooltip(
 Use `tooltipBuilder` when you want to draw the entire overlay yourself:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   direction: TooltipDirection.left,
   tooltipBuilder: (context) {
     return DecoratedBox(
@@ -147,7 +147,7 @@ provided.
 
 ## Controller
 
-Use `ClickTooltipController` when another widget should show, hide, or toggle
+Use `TapTooltipController` when another widget should show, hide, or toggle
 the tooltip:
 
 ```dart
@@ -160,7 +160,7 @@ class ControlledTooltipExample extends StatefulWidget {
 }
 
 class _ControlledTooltipExampleState extends State<ControlledTooltipExample> {
-  final ClickTooltipController _controller = ClickTooltipController();
+  final TapTooltipController _controller = TapTooltipController();
 
   @override
   void dispose() {
@@ -172,7 +172,7 @@ class _ControlledTooltipExampleState extends State<ControlledTooltipExample> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        ClickTooltip(
+        TapTooltip(
           controller: _controller,
           tooltip: 'Controlled tooltip',
           clickable: false,
@@ -193,7 +193,7 @@ class _ControlledTooltipExampleState extends State<ControlledTooltipExample> {
 Choose the popup side with `direction`:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   direction: TooltipDirection.right,
   tooltip: 'The tooltip appears on the right side.',
 )
@@ -211,7 +211,7 @@ bubble so it stays inside the overlay bounds. Use `safePadding` to reserve space
 from screen edges:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   direction: TooltipDirection.bottom,
   autoSafeDetection: true,
   safePadding: const EdgeInsets.all(16),
@@ -222,7 +222,7 @@ ClickTooltip(
 Use `offset` for manual adjustment:
 
 ```dart
-ClickTooltip(
+TapTooltip(
   offset: const Offset(12, 8),
   tooltip: 'Offset from the default anchor position.',
 )
@@ -231,7 +231,7 @@ ClickTooltip(
 ## Styling
 
 ```dart
-ClickTooltip(
+TapTooltip(
   direction: TooltipDirection.bottom,
   padding: const EdgeInsets.all(14),
   maxWidth: 240,
@@ -266,7 +266,7 @@ the default bubble renderer.
 - `clickable`: controls whether tapping the anchor toggles the tooltip.
 
 ```dart
-ClickTooltip(
+TapTooltip(
   tooltip: 'Tap outside to close',
   autoDismiss: true,
   barrierDismissible: true,

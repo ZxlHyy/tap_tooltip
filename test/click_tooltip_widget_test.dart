@@ -32,7 +32,7 @@ void main() {
     expect(find.text('Tooltip message'), findsNothing);
   });
 
-  testWidgets('can be controlled by ClickTooltipController', (
+  testWidgets('can be controlled by TapTooltipController', (
     WidgetTester tester,
   ) async {
     final controller = TapTooltipController();

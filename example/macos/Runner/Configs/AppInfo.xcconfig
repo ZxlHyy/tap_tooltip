@@ -8,7 +8,7 @@
 PRODUCT_NAME = tap_tooltip_example
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.clickTooltipExample
+PRODUCT_BUNDLE_IDENTIFIER = com.example.tapTooltipExample
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2026 com.example. All rights reserved.

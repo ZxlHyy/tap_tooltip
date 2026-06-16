@@ -12,7 +12,7 @@ import XCTest
 class RunnerTests: XCTestCase {
 
   func testGetPlatformVersion() {
-    let plugin = ClickTooltipPlugin()
+    let plugin = TapTooltipPlugin()
 
     let call = FlutterMethodCall(methodName: "getPlatformVersion", arguments: [])
 

@@ -11,8 +11,8 @@
 
 Initial release.
 
-- Added `ClickTooltip`, a click-triggered Flutter tooltip widget.
-- Added `ClickTooltipController` for programmatic show, hide, and toggle flows.
+- Added `TapTooltip`, a click-triggered Flutter tooltip widget.
+- Added `TapTooltipController` for programmatic show, hide, and toggle flows.
 - Added support for top, bottom, left, and right tooltip placement.
 - Added text, widget, and builder-based tooltip content APIs.
 - Added customizable bubble decoration, text style, padding, constraints, size,

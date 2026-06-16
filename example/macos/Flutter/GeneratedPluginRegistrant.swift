@@ -8,5 +8,5 @@ import Foundation
 import tap_tooltip
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  ClickTooltipPlugin.register(with: registry.registrar(forPlugin: "ClickTooltipPlugin"))
+  TapTooltipPlugin.register(with: registry.registrar(forPlugin: "TapTooltipPlugin"))
 }
