@@ -1,19 +1,19 @@
-# click_tooltip
+# tap_tooltip
 
 A Flutter widget for showing a click-triggered tooltip from any anchor widget.
 It supports text, custom content widgets, fully custom overlay builders,
 directional placement, arrow styling, controller-driven visibility, background
 blur, outside-tap dismissal, and automatic screen-boundary adjustment.
 
-[![](https://img.shields.io/pub/v/click_tooltip.svg)](https://pub.dev/packages/click_tooltip)
+[![](https://img.shields.io/pub/v/tap_tooltip.svg)](https://pub.dev/packages/tap_tooltip)
 
-![top](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/top.gif)
-![bottom](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/bottom.gif)
-![left](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/left.gif)
-![right](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/right.gif)
-![child](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/child.gif)
-![gradiant](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/gradiant.gif)
-![setting](https://raw.githubusercontent.com/ZxlHyy/click_tooltip/master/images/setting.gif)
+![top](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/top.gif)
+![bottom](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/bottom.gif)
+![left](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/left.gif)
+![right](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/right.gif)
+![child](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/child.gif)
+![gradiant](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/gradiant.gif)
+![setting](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/setting.gif)
 
 
 ## Features
@@ -35,13 +35,13 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  click_tooltip: ^0.0.5
+  tap_tooltip: ^0.0.5
 ```
 
 Then import it:
 
 ```dart
-import 'package:click_tooltip/click_tooltip.dart';
+import 'package:tap_tooltip/tap_tooltip.dart';
 ```
 
 ## Basic Usage

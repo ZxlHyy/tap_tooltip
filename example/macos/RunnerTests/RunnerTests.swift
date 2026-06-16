@@ -3,7 +3,7 @@ import FlutterMacOS
 import XCTest
 
 
-@testable import click_tooltip
+@testable import tap_tooltip
 
 // This demonstrates a simple unit test of the Swift portion of this plugin's implementation.
 //

@@ -6,7 +6,7 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <click_tooltip/click_tooltip_plugin_c_api.h>
+#include <tap_tooltip/tap_tooltip_plugin_c_api.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
   ClickTooltipPluginCApiRegisterWithRegistrar(

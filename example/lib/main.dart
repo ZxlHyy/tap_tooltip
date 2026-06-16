@@ -1,4 +1,4 @@
-import 'package:click_tooltip/click_tooltip.dart';
+import 'package:tap_tooltip/tap_tooltip.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -543,7 +543,7 @@ class _InteractivePlaygroundState extends State<_InteractivePlayground> {
         );
       case _DemoStyle.light:
         return BoxDecoration(
-          color: Colors.white60,
+          color: Colors.white70,
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: Colors.indigo.shade200),
           boxShadow: const [

@@ -1,6 +1,6 @@
-# click_tooltip_example
+# tap_tooltip_example
 
-Demonstrates how to use the click_tooltip plugin.
+Demonstrates how to use the tap_tooltip plugin.
 
 ## Getting Started
 

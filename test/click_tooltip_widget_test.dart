@@ -1,4 +1,4 @@
-import 'package:click_tooltip/click_tooltip.dart';
+import 'package:tap_tooltip/tap_tooltip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

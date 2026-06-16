@@ -5,7 +5,7 @@
 import FlutterMacOS
 import Foundation
 
-import click_tooltip
+import tap_tooltip
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   ClickTooltipPlugin.register(with: registry.registrar(forPlugin: "ClickTooltipPlugin"))

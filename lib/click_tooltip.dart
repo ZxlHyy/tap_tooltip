@@ -1,1 +1,1 @@
-export 'widget/click_tooltip.dart';
+export 'widget/tap_tooltip.dart';

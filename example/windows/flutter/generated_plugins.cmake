@@ -3,7 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  click_tooltip
+  tap_tooltip
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

@@ -6,10 +6,10 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <click_tooltip/click_tooltip_plugin.h>
+#include <tap_tooltip/tap_tooltip_plugin.h>
 
 void fl_register_plugins(FlPluginRegistry* registry) {
-  g_autoptr(FlPluginRegistrar) click_tooltip_registrar =
+  g_autoptr(FlPluginRegistrar) tap_tooltip_registrar =
       fl_plugin_registry_get_registrar_for_plugin(registry, "ClickTooltipPlugin");
-  click_tooltip_plugin_register_with_registrar(click_tooltip_registrar);
+  tap_tooltip_plugin_register_with_registrar(tap_tooltip_registrar);
 }
