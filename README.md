@@ -35,7 +35,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  tap_tooltip: ^0.0.5
+  tap_tooltip: ^0.0.2
 ```
 
 Then import it:
