@@ -7,7 +7,7 @@
 - Documented safety behavior, controller-only interaction, and tooltip styling
   options.
 
-## 0.0.1
+## 0.0.2
 
 Initial release.
 

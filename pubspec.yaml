@@ -1,6 +1,6 @@
 name: tap_tooltip
 description: "A highly customizable tap-to-show tooltip widget for Flutter. Supports four directions (top/bottom/left/right), custom arrow size, rounded corners, blur effect, overlay-safe positioning, and programmatic control via controller."
-version: 0.0.1
+version: 0.0.2
 
 homepage: https://github.com/ZxlHyy/tap_tooltip
 repository: https://github.com/ZxlHyy/tap_tooltip

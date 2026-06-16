@@ -7,13 +7,13 @@ blur, outside-tap dismissal, and automatic screen-boundary adjustment.
 
 [![](https://img.shields.io/pub/v/tap_tooltip.svg)](https://pub.dev/packages/tap_tooltip)
 
-![top](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/top.jpg)
-![bottom](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/bottom.jpg)
-![left](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/left.jpg)
-![right](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/right.jpg)
-![child](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/child.jpg)
-![gradiant](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/gradiant.jpg)
-![setting](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/setting.jpg)
+![top](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/top.png)
+![bottom](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/bottom.png)
+![left](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/left.png)
+![right](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/right.png)
+![child](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/child.png)
+![gradiant](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/gradiant.png)
+![setting](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/setting.png)
 
 
 ## Features
