@@ -12,7 +12,7 @@ blur, outside-tap dismissal, and automatic screen-boundary adjustment.
 ![left](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/left.png)
 ![right](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/right.png)
 ![child](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/child.png)
-![gradiant](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/gradiant.png)
+![gradient](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/gradient.png)
 ![setting](https://raw.githubusercontent.com/ZxlHyy/tap_tooltip/master/images/setting.png)
 
 

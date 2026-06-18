@@ -6,6 +6,35 @@ homepage: https://github.com/ZxlHyy/tap_tooltip
 repository: https://github.com/ZxlHyy/tap_tooltip
 issue_tracker: https://github.com/ZxlHyy/tap_tooltip/issues
 documentation: https://github.com/ZxlHyy/tap_tooltip#readme
+topics:
+  - tap
+  - tooltip
+  - click
+  - tip
+
+screenshots:
+  - description: A tooltip at the top.
+    path: images/top.png
+  - description: A tooltip at the bottom.
+    path: images/bottom.png
+  - description: A tooltip at the left.
+    path: images/left.png
+  - description: A tooltip at the right.
+    path: images/right.png
+  - description: A tooltip with a child widget.
+    path: images/child.png
+  - description: A tooltip with a gradient background.
+    path: images/gradient.png
+  - description: A tooltip with a setting icon.
+    path: images/setting.png
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 environment:
   sdk: ^3.9.2
